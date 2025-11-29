@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex-Scale</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background: radial-gradient(circle at center, #4a0080 0%, #1a0033 60%, #0d001a 100%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        * { margin:0; padding:0; }
+        html { height:100%; }
+        body {
+            min-height:100vh;
+            background:#0a001a;
+            background:radial-gradient(circle at 50% 50%, 
+                #8b3fff 0%,
+                #5e17eb 12%,
+                #320d6b 28%,
+                #1a003a 45%,
+                #0a001a 70%,
+                #0a001a 100%);
+            background-attachment:fixed;   /* fixes mobile seams */
+            display:flex;
+            justify-content:center;
+            align-items:center;
         }
         img {
-            width: 100px;                     /* fixed 100px size */
-            height: auto;
-            filter: drop-shadow(0 0 40px #c46bff)
-                    drop-shadow(0 0 80px #ff66c4)
-                    drop-shadow(0 0 140px #ff66c4);
+            width:100px;
+            filter:drop-shadow(0 0 50px #c46bff)
+                   drop-shadow(0 0 100px #ff66c4);
         }
     </style>
 </head>

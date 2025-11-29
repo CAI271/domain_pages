@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex-Scale</title>
     <style>
-        body, html {
+        :root {
+            --apex-purple: #7B3FF2;
+            --neural-lavender: #C9A6FF;
+            --electric-pink: #FF66C4;
+            --deep-space-black: #0A0A0F;
+            --charcoal-graphite: #1A1A24;
+            --soft-white: #EDEDED;
+        }
+        html, body {
             margin: 0;
             padding: 0;
             height: 100%;
-            background: linear-gradient(135deg, #2A0B4D 0%, #0F0726 50%, #1A0033 100%);
+            background: var(--deep-space-black);
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
         img {
             width: 90vw;
             max-width: 1200px;
-            filter: drop-shadow(0 0 80px #9B4BFF);
+            height: auto;
+            filter: drop-shadow(0 0 60px rgba(123, 63, 242, 0.8));
         }
     </style>
 </head>
